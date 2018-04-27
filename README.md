@@ -21,8 +21,6 @@ $ git clone <forked url>
 
 使用習慣的編輯器修改 `index.md`，如果沒有習慣的編輯器可以選擇 [Viual Code](https://code.visualstudio.com/) 或是 [Vim](https://www.vim.org/)
 
-#### 安裝 jekyll
-
 #### 看一下效果怎樣
 
 如果你沒有 Jekyll，請先安裝
