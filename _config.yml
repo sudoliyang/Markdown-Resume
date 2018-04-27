@@ -1,0 +1,2 @@
+exclude: ["bin", "README.md"]
+google_analytics:
