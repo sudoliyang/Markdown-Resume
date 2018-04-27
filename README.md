@@ -7,15 +7,30 @@
 
 ## Getting Start 
 
-#### 安裝 jekyll
-```bash
-$ gem install jekyll 
+#### fork 專案
+
+右上角 fork 按下去
+
+#### Git Clone
+
+```
+$ git clone <forked url>
 ```
 
 #### 寫履歷
+
 使用習慣的編輯器修改 `index.md`，如果沒有習慣的編輯器可以選擇 [Viual Code](https://code.visualstudio.com/) 或是 [Vim](https://www.vim.org/)
 
+#### 安裝 jekyll
+
 #### 看一下效果怎樣
+
+如果你沒有 Jekyll，請先安裝
+```bash
+$ gem install jekyll
+```
+
+讓 Jekyll live 的 rebuild 我們的履歷，瀏覽器打開 http://127.0.0.1:400 查看效果
 ```bash
 $ jekyll serve
 Configuration file: /Users/liyang/Markdown-Resume/_config.yml
@@ -34,7 +49,7 @@ Configuration file: /Users/liyang/Markdown-Resume/_config.yml
 
 ## Deploy to Github Page
 
-設定 google analytics, 編輯 `_config.yml`
+設定 google analytics track id, 編輯 `_config.yml`
 ```
 google_analytics: <your_google_analytics_tracking_code>
 ```
