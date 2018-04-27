@@ -3,7 +3,7 @@
 - 只有一個 Markdown 檔案 
 - 沒有複雜的設定 ✅
 - 寫一寫 📝 馬上部署到 Github Page 🚀 
-- Demo: [https//resume.liyang.info](https//resume.liyang.info)
+- Demo: [https://sudoliyang.github.io/Markdown-Resume/](https://sudoliyang.github.io/Markdown-Resume/)
 
 ## Getting Start 
 
