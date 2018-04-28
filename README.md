@@ -28,7 +28,7 @@ $ git clone <forked url>
 $ gem install jekyll
 ```
 
-讓 Jekyll live 的 rebuild 我們的履歷，瀏覽器打開 http://127.0.0.1:400 查看效果
+讓 Jekyll live 的 rebuild 我們的履歷，瀏覽器打開 http://127.0.0.1:4000 查看效果
 ```bash
 $ jekyll serve
 Configuration file: /Users/liyang/Markdown-Resume/_config.yml
