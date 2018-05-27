@@ -19,7 +19,7 @@ $ git clone <forked url>
 
 #### 寫履歷
 
-使用習慣的編輯器修改 `index.md`，如果沒有習慣的編輯器可以選擇 [Viual Code](https://code.visualstudio.com/) 或是 [Vim](https://www.vim.org/)
+使用習慣的編輯器修改 `index.md`，如果沒有習慣的編輯器可以選擇 [Visual Studio Code](https://code.visualstudio.com/) 或是 [Vim](https://www.vim.org/)
 
 #### 看一下效果怎樣
 
