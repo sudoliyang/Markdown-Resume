@@ -11,6 +11,7 @@
             max-width: 980px;
             margin: 0 auto;
             padding: 45px;
+            padding-bottom: 0;
        }
 
        @media (max-width: 767px) {
@@ -19,11 +20,109 @@
            }
        }
 
-        .markdown-body blockquote {
-          padding: 0 1em;
-          color: #000000;
-          border-left: 0.25em;
+       section {
+           break-inside: avoid;
+       }
+
+        @media only screen and (min-width: 1024px) {
+            .markdown-body {
+                box-shadow:0 5px 10px rgba(0,0,0,.2);
+                margin-top: 50px;
+            }
+
+            div.two-column {
+                column-width: 400px;
+                column-gap: 1em;
+            }
+
+            div.two-column h3 {
+                margin-top: 0px;
+            }
         }
+
+       .markdown-body blockquote {
+         padding: 0 1em;
+         color: #000000;
+         border-left: 0.25em;
+       }
+
+        /* 
+    	@media (max-width: 1024px) {
+            TODO small screen font size scale
+    	}
+        */
+
+    	@media print {
+            .markdown-body {
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                font-size: 12px;
+                line-height: 1.2;
+                word-wrap: break-word;
+                padding: 0px;
+                box-shadow:none;
+                margin-top:0;
+            }
+
+            div.two-column {
+                column-width: 400px;
+                column-gap: 1em;
+            }
+
+            div.two-column h3 {
+                margin-top: 0px;
+            }
+
+            .markdown-body h1 {
+                font-size: 1.7em;
+                margin-top: 5px;
+                margin-bottom: 8px;
+            }
+
+            .markdown-body h3 {
+                font-size: 1.3em;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            .markdown-body p {
+                margin-bottom: 10px;
+            }
+
+            .markdown-body ul {
+                margin-left: 5px;
+                padding-left: 1em;
+                margin-bottom: 5px;
+            }
+
+            div.two-column {
+                column-width: 330px;
+                column-gap: 1em;
+                /* column-rule: 1px solid #ccc; */
+            }
+
+            div.skill {
+                break-inside: avoid;
+            }
+
+            div.skill p {
+                margin-left: 5px;
+            }
+
+            div.skill ul {
+                margin-left: 8px;
+            }
+
+    	}
+        
+        @page {
+            size: A4 portrait;
+            margin-left: 1cm;
+            margin-right: 1cm;
+            margin-top: 1cm;
+            margin-bottom: 1cm;
+        }
+
     </style>
 
     <style>
@@ -36,7 +135,14 @@
 			margin: auto;
 			margin-bottom: 50px;
 			font-size: 15px;
+            padding: 30px;
 		}
+
+        .footer a {
+            font-weight: bold;
+            color: #34495e;
+            text-decoration: none;
+        }
       
     </style>
   </head>
@@ -54,11 +160,32 @@
 
   <body>
     <article class="markdown-body">
-    {{ content }}
+        <section class="summery">
+            {{ content }}
+        </section>
+        <section class="skill">
+            <h1> Skill </h1>
+            <div class="two-column">
+                {% capture my_include %}{% include section/skill.md %}{% endcapture %}
+                {{ my_include | markdownify }}
+            </div>
+        </section>
+        <section class="work_experience">
+            {% capture my_include %}{% include section/work_experience.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </section>
+        <section class="education">
+            {% capture my_include %}{% include section/education.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </section>
+        <section class="project">
+            {% capture my_include %}{% include section/project.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </section>
+        <div class="footer">
+            <strong>Powered</strong> by 
+            ❤️<a href="https://github.com/sudoliyang/Markdown-Resume">Markdown-Resum </a>
+        </div>
     </article>
-    <div class="footer">
-        <strong>Powered</strong> by 
-        ❤️<a href="https://github.com/sudoliyang/Markdown-Resume">Markdown-Resume </a>
-    </div>
   </body>
 </html>
