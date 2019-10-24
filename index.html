@@ -1,61 +1,72 @@
 <html lang="zh-Hant-TW">
-  <head>
+
+<head>
     <title>Liyang's resume</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="robots" content="noarchive">
     <link rel="stylesheet" href="css/github-markdown.css">
+    <link rel="stylesheet" href="css/print.css">
     <style>
-      .markdown-body {
+        .markdown-body {
             box-sizing: border-box;
             min-width: 200px;
             max-width: 980px;
             margin: 0 auto;
             padding: 45px;
-       }
+            padding-bottom: 0;
+        }
 
-       @media (max-width: 767px) {
-           .markdown-body {
-               padding: 15px;
-           }
-       }
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+
+        section {
+            break-inside: avoid;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .markdown-body {
+                box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+                margin-top: 50px;
+            }
+        }
 
         .markdown-body blockquote {
-          padding: 0 1em;
-          color: #000000;
-          border-left: 0.25em;
+            padding: 0 1em;
+            color: #000000;
+            border-left: 0.25em;
         }
     </style>
 
     <style>
-		h1 {
-		  color: #34495e;
-		}
+        h1 {
+            color: #34495e;
+        }
 
-		.footer {
-			text-align: center;
-			margin: auto;
-			margin-bottom: 50px;
-			font-size: 15px;
-		}
-      
+        .footer {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 50px;
+            font-size: 15px;
+            padding: 30px;
+        }
+
+        .footer a {
+            font-weight: bold;
+            color: #34495e;
+            text-decoration: none;
+        }
     </style>
-  </head>
-  
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+</head>
 
-    ga('create', 'UA-83884498-4', 'auto');
-    ga('send', 'pageview');
-  </script>
-  
 
-  <body>
+<body>
     <article class="markdown-body">
-    <h1 id="張立揚">張立揚</h1>
-<h3 id="我是張立揚一個喜愛寫程式動手實作注重自我成長學習不同的技術的人"><em>我是張立揚，一個喜愛寫程式，動手實作，注重自我成長，學習不同的技術的人</em></h3>
+        <section class="summery">
+            <h1 id="張立揚">張立揚</h1>
+<h3 id="樂愛解決問題注重自我技能成長團隊合作高效開發">樂愛解決問題、注重自我技能成長、團隊合作、高效開發</h3>
 
 <blockquote>
   <ul>
@@ -65,75 +76,117 @@
   </ul>
 </blockquote>
 
-<p>拜科技所賜，我大多數的電腦技能都是仰賴網路自學而來，透過 GitHub、Stack Overflow 我能夠學習到其他人的日月精華，少走點冤枉路，在實際的操作快速的找到解決問題的方法，藉此滿足自己的成就感怪物。</p>
+<p>熱衷軟體開發已逾 3 年多，目前任職圓周律資訊擔任軟體工程師，持續透過不同管道精進自己，動手實作開發出有價值且具挑戰之服務，過程中熱愛透過軟體開發解決問題。</p>
 
-<p>我擅長使用工具來解決開發 Web 相關應用，例如使用 <code class="highlighter-rouge">cURL</code>、<code class="highlighter-rouge">Postman</code> 測試 Web API，以及 Chrome Dev Tool 查看網頁載入效能，即時修改前端 UI 呈現，與基礎的了解 <code class="highlighter-rouge">HTML</code>&amp;<code class="highlighter-rouge">CSS</code>&amp;<code class="highlighter-rouge">JavaScript</code> 相關運作機制。</p>
+<p>目前專注在 Web Application 領域，主要從事後端、系統架構設計與開發，但同時也兼具開發前端良好基礎知識。懂得如何善用工具像是 Git 團隊協作，注重 Code Review 的過程。</p>
 
-<p>良好的基礎資安知識，了解基礎的 SQL injection、XSS、CSRF 相關的原理，以及基礎預防的方式，以及注重程式開發過程中的資安細節。</p>
+<p>軟體工程師絕不是寫程式的黑手，軟體工程師是解決問題的魔術師，掌握技術的魔法釐清商業需求，視情況提出合適的解決方案，解決問題並提供良好的軟體服務。</p>
 
-<p>我希望能夠成為稱職的 Software Engineer，能擁有良好的團隊合作，注重開發效能以及資訊安全相關議題。</p>
-
-<h1 id="skill">Skill</h1>
-
-<h3 id="unix-like">Unix-like</h3>
-<blockquote>
-  <p>我喜歡在 Unix-like 環境底下工作，並熟悉使用 Vim、tmux 來<strong>提高生產力</strong></p>
+        </section>
+        <section class="skill">
+            <h1> Skill </h1>
+            <div>
+                
+                <div class="skill">
+  <h3 id="programming">Programming</h3>
+  <p>針對不同的需求選擇相應的工具</p>
   <ul>
-    <li>擅長使用 package manager，管理相關套件 例如：<code class="highlighter-rouge">apt-get</code>, <code class="highlighter-rouge">brew</code></li>
-    <li>熟悉網路配置，了解如何設定網卡，在 Ubuntu 底下透過 <code class="highlighter-rouge">/etc/network/interfaces</code></li>
-    <li>了解磁碟配置，例如：<code class="highlighter-rouge">df</code>, <code class="highlighter-rouge">fdisk</code>, <code class="highlighter-rouge">mount</code></li>
-    <li>基礎了解 Shell Script 撰寫</li>
-    <li>基礎了解以及使用 <strong>Docker</strong></li>
-    <li>熟悉在 macOS Desktop environment 開發，在 Ubuntu 上進行部署</li>
+    <li>Python, 爬蟲與資料處理</li>
+    <li>PHP, 搭配 Laravel 框架開發後端</li>
+    <li>JavaScript, 撰寫前端功能、搭配 React 與 JQuery</li>
   </ul>
-</blockquote>
+</div>
 
-<h3 id="java">Java</h3>
-<blockquote>
-  <p>接觸 Java 一年，多用於較複雜之系統開發</p>
+<div class="skill">
+  <h3 id="web-development">Web Development</h3>
+  <p>專注在後端</p>
   <ul>
-    <li>了解 Java Object Oriented Programming 與 MVC 架構</li>
-    <li>了解 Hibernate ORM 以及 JDBC 的配置與開發</li>
-    <li>基礎了解 JSF/Primeface 開發</li>
+    <li>Backend Framework：<code class="highlighter-rouge">Laravel</code>, <code class="highlighter-rouge">Django</code></li>
+    <li>Frontend Stack：<code class="highlighter-rouge">JavaScript</code>, <code class="highlighter-rouge">jQuery</code>, <code class="highlighter-rouge">React</code> 來完成前端基礎功能</li>
+    <li>Database: <code class="highlighter-rouge">MongoDB</code>, <code class="highlighter-rouge">MySQL</code></li>
+    <li><code class="highlighter-rouge">Elastic Search</code> 實做高效搜尋功能，並透過 <code class="highlighter-rouge">elasticsearch-analysis-ik</code> plugin 與自訂中文辭典讓提升中文搜索效果</li>
+    <li>Queue: <code class="highlighter-rouge">Kafka</code>, <code class="highlighter-rouge">RabbitMQ</code></li>
+    <li>Facebook/Google OAuth</li>
+    <li>通過 Amazon SES 發送系統通知信件</li>
+    <li>Line Pay、藍新金流串接</li>
+    <li>串接 ezPay 電子發票開立</li>
   </ul>
-</blockquote>
+</div>
 
-<h3 id="git">Git</h3>
-<blockquote>
-  <p>熟悉 Git functional，並實際使用提升團隊開發效率</p>
+<div class="skill">
+  <h3 id="devops">DevOps</h3>
+  <p>開發與部署</p>
   <ul>
-    <li>熟悉 Git 基礎 <code class="highlighter-rouge">add</code>, <code class="highlighter-rouge">commit</code>, <code class="highlighter-rouge">push</code>, <code class="highlighter-rouge">pull</code> 以及 <code class="highlighter-rouge">remote</code>, <code class="highlighter-rouge">branch</code> 相關 functions</li>
-    <li>了解 Git flow 對專案功能拆分，以及協作相關知識</li>
-    <li>特別喜歡 <code class="highlighter-rouge">stash</code>, <code class="highlighter-rouge">rebase</code> 的功能</li>
+    <li>透過 <code class="highlighter-rouge">Docker</code> 搭建服務</li>
+    <li>部署在 <code class="highlighter-rouge">GCP</code> 使用 <code class="highlighter-rouge">Computing Engine</code>, <code class="highlighter-rouge">Cloud Storage</code>, <code class="highlighter-rouge">VPC Network</code></li>
+    <li>透過 <code class="highlighter-rouge">Nginx</code> 做 Load Balancer 並透過 <code class="highlighter-rouge">Pagespeed</code> 模組提升網頁性能</li>
+    <li>Crontab / Let’s Encrypt</li>
   </ul>
-</blockquote>
+</div>
 
-<h3 id="python">Python</h3>
-<blockquote>
-  <p>接觸 Python 兩年，平時用於開發爬蟲與輕量級應用</p>
+<div class="skill">
+  <h3 id="productivity">Productivity</h3>
+  <p>熟悉提升開發效率之工具</p>
   <ul>
-    <li>熟悉 pip 管理 package</li>
-    <li>基礎了解並曾經使用 <code class="highlighter-rouge">flask</code></li>
-    <li>擅長使用 <code class="highlighter-rouge">requests</code>、<code class="highlighter-rouge">beautifulsoup</code>、<code class="highlighter-rouge">selenium</code> 撰寫爬蟲</li>
+    <li>熟悉 Git 管理程式碼，熟悉 remote, branch, merge, stash 功能與實戰應用</li>
+    <li>理解 Git Flow 或是 GitHub Flow 多人協作分支策略</li>
+    <li>熟悉在 Terminal 環境下工作，透過 Vim/Tmux 打造高效的開發環境</li>
   </ul>
-</blockquote>
+</div>
 
-<h1 id="education">Education</h1>
+            </div>
+        </section>
+        <section class="education">
+            
+            <h1 id="education">Education</h1>
 
+<h3 id="國立高雄應用科技大學---2019-畢業">國立高雄應用科技大學 - 2019 畢業</h3>
 <ul>
-  <li>國立高雄應用科技大學 - 就讀中
-    <ul>
-      <li>電子工程系</li>
-    </ul>
-  </li>
-  <li>國立臺北科技大學附屬桃園農工高級中等學校 - 2014
-    <ul>
-      <li>電子科</li>
-    </ul>
-  </li>
+  <li>電子工程系</li>
+  <li>畢業專題實作競賽資訊組第一名(16組)</li>
+  <li>畢業成績全班第三名(26人)</li>
 </ul>
 
-<h1 id="work-experiences">Work Experiences</h1>
+<h3 id="國立臺北科技大學附屬桃園農工高級中等學校---2014-畢業">國立臺北科技大學附屬桃園農工高級中等學校 - 2014 畢業</h3>
+<ul>
+  <li>電子科</li>
+  <li>全科畢業專題實作競賽第二名</li>
+</ul>
+
+        </section>
+        <section class="work_experience">
+            
+            <h1 id="work-experience">Work Experience</h1>
+
+<h3 id="圓周律資訊"><strong>圓周律資訊</strong></h3>
+<blockquote>
+  <p><strong>Software Engineer</strong> <em>2017 Nov ~ Present</em></p>
+</blockquote>
+
+<blockquote>
+
+  <ul>
+    <li>專案協作
+      <ul>
+        <li>與 PM 協作釐清需求並提出相應的解決方案</li>
+        <li>與 PM、設計師協作改善 UI/UX</li>
+        <li>導入 GitHub Flow 與 Code Review 流程</li>
+      </ul>
+    </li>
+    <li>維護開發
+      <ul>
+        <li>重構網站後端，改善頁面載入速度，減少 16% 載入時間</li>
+        <li>開發訂閱方案包括金流、會員功能、點數改版，帶來穩定收入</li>
+        <li>優化並調整 SEO，提升頁面排名</li>
+      </ul>
+    </li>
+    <li>運帷部署
+      <ul>
+        <li>部署在 GCP，通過 Pagespeed 提升頁面載入效率</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
 
 <h3 id="百星電子"><strong>百星電子</strong></h3>
 <blockquote>
@@ -143,9 +196,6 @@
 <blockquote>
   <p>我們致力於打造企業內部的應用服務，利用 Liferay Portal 作為單一入口 <br />
 串接 BPMs，優化內部業務流程，追蹤與管理生產、帳款、相關之過程。</p>
-</blockquote>
-
-<blockquote>
   <ul>
     <li>優化開發流程
       <ul>
@@ -155,8 +205,7 @@
     </li>
     <li>管理 Infrastructure
       <ul>
-        <li>建置與管理 VMware vSphere 與管理 Virtual Machine 相關資源配置</li>
-        <li>管理 Linux Server 包含用戶管理、檔案權限、網路配置、SSH 配置，我們使用 Ubuntu</li>
+        <li>建置與管理 VMware vSphere 與內部 Linux/Ubuntu 用戶、檔案權限、網路配置</li>
       </ul>
     </li>
     <li>開發內部系統
@@ -174,77 +223,45 @@
 
 <blockquote>
   <p>我們專注在提升圍棋人，更佳的體驗，結合最新的技術與想法 <br />
-進駐 AppWorks Accelerator Class #10，在 AppWorks 時期了解到整個 Internet Startup 的相關技術、生態。</p>
+進駐 AppWorks Accelerator Class #10，在 AppWorks 時期學習整個 Internet Startup 的生態。</p>
   <ul>
-    <li>設計與實作 <strong>藍芽控制圍棋計時器</strong>，使用 Arduino 與 App Inventor 2 快速的實作出 Android App 可以控制的計時器</li>
+    <li>尋找商業模式與嘗試各種機會</li>
+    <li>透過 Arduino 與周邊電路設計與實作硬體 prototype</li>
+    <li>透過 Swift 為圍棋人客製化開發計時器 iOS App</li>
   </ul>
 </blockquote>
 
+        </section>
+        <section class="project">
+            
+            <h1 id="project">Project</h1>
+
+<h3 id="interviewsalary">Interview/Salary</h3>
 <blockquote>
+  <p>技術：<strong>PHP, Laravel, JavaScript, MongoDB, ElasticSearch, Memcached, GCP, Ubuntu, Docker</strong></p>
   <ul>
-    <li>設計與實作 <strong><a href="https://itunes.apple.com/tw/app/go-timer-pro/id976475316">iOS App 圍棋計時器</a></strong>，專為圍棋人所設計的 App。</li>
+    <li>設計與實作 Web 前後端功能，實作訂閱方案帶來穩定收入</li>
+    <li>設計與實作系統架構</li>
+    <li>相關連結：<a href="https://interview.tw">Interview</a>, <a href="https://salary.tw">Salary</a></li>
   </ul>
 </blockquote>
 
-<h1 id="projects">Projects</h1>
-
-<h3 id="悠遊卡門禁系統">悠遊卡門禁系統</h3>
-<ul>
-  <li><a href="https://www.youtube.com/watch?v=EtDhlc-RODw">介紹影片</a></li>
-  <li><strong>負責 100% 的電路設計，100 % 的 Arduino 的程式開發</strong></li>
-</ul>
-
+<h3 id="學生時期的專案">學生時期的專案</h3>
 <blockquote>
-  <p>使用 Arduino 透過 UART protocol 與 Wiegand 34 串接讀卡機感測卡號 <br />
-撰寫整個控制邏輯，與將資料存取在 E²PROM，控制硬體電路驅動門鎖，</p>
+  <p>技術：<strong>Python, React Native, Scrapy, Django, MySQL…etc.</strong>  2014 ~ 2019</p>
+  <ul>
+    <li>SellPhone, 自動化程式分析手機價格</li>
+    <li>Paidui, <code class="highlighter-rouge">React Native</code> 實作 <code class="highlighter-rouge">iOS</code> 與 <code class="highlighter-rouge">Android</code> 的點餐與排隊 App</li>
+    <li><a href="https://blog.liyang.info/projects/">其他更多</a></li>
+  </ul>
 </blockquote>
 
-<h3 id="couchpotatube">couchpotaTube</h3>
-<ul>
-  <li><a href="https://docs.google.com/document/d/1W7sVoCRgvX5pQaMJOvoPFcJcW7IXPfc0QCZRdxrY_4g">介紹文件</a></li>
-  <li><a href="https://drive.google.com/file/d/0B5R9vQBtmPwNZ2lwN1QySGc4dGM">示範影片</a></li>
-  <li><strong>負責 100% 的 iOS App 開發， 100% 的 Python 開發</strong></li>
-</ul>
-
-<blockquote>
-  <p><em>這個專案的構想很簡單，想要實現可以跟「馬鈴薯」一樣躺在沙發上看 YouTube</em> <br />
-使用 <code class="highlighter-rouge">Selenium</code> 控制 Firefox 上的 YouTube，並使用 <code class="highlighter-rouge">Flask</code> 實作 API 提供 iOS 發送 HTTP Request 遙控 YouTube</p>
-</blockquote>
-
-<h3 id="ios-app-圍棋計時器">iOS App 圍棋計時器</h3>
-<ul>
-  <li><a href="https://itunes.apple.com/tw/app/go-timer-pro/id976475316">App Store link</a></li>
-  <li><strong>負責 100% 的 iOS App 開發， 50% 的 需求分析/UI設計</strong></li>
-</ul>
-
-<blockquote>
-  <p>從使用者角度出發設計的 App，從歸納使用者情景設計出 UI 以及使用 Swift 實作出來，並成功上架到 App Store。</p>
-</blockquote>
-
-<h3 id="code-school-downloader">Code School Downloader</h3>
-<ul>
-  <li><a href="https://github.com/sudoliyang/CodeSchool-Downloader">GitHub link</a></li>
-  <li><strong>負責 100% 的 Python 開發</strong></li>
-</ul>
-
-<blockquote>
-  <p>使用 Python 開發，使用 <code class="highlighter-rouge">Selenium</code> 自動控制 Firefox 透過 <code class="highlighter-rouge">BeautifulSoup</code> 分析並爬取 Code School 影片真實路徑，並依照分類進行下載 <a href="https://www.codeschool.com/">CodeSchool</a> 全部的影片。</p>
-</blockquote>
-
-<h3 id="electron-with-embed-system">Electron with Embed System</h3>
-<ul>
-  <li><strong>負責 100% 的 Node.js Electron 開發</strong></li>
-</ul>
-
-<blockquote>
-  <p>我們想要基於 Raspberry Pi 快速的開發一個 <a href="https://en.wikipedia.org/wiki/Interactive_kiosk">Kiosk</a> 裝置 <br />
-選擇 Electron 快速的開發出 prototype，並結合 rpio 的 node js package 調用 GPIO 控制硬體的交互作用。 <br /></p>
-</blockquote>
-
+        </section>
+        <div class="footer">
+            <strong>Powered</strong> by
+            ❤️<a href="https://github.com/sudoliyang/Markdown-Resume">Markdown-Resum </a>
+        </div>
     </article>
-    <div class="footer">
-        <strong>Powered</strong> by 
-        ❤️<a href="https://github.com/sudoliyang/Markdown-Resume">Markdown-Resume </a>
-    </div>
-  </body>
+</body>
+
 </html>

@@ -1,0 +1,55 @@
+@page {
+    size: A4 portrait;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+@media print {
+    .markdown-body {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        font-size: 12px;
+        line-height: 1.2;
+        word-wrap: break-word;
+        padding: 0px;
+        box-shadow: none;
+        margin-top: 0;
+    }
+
+    .markdown-body h1 {
+        font-size: 1.7em;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .markdown-body h3 {
+        font-size: 1.3em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .markdown-body p {
+        margin-bottom: 10px;
+    }
+
+    .markdown-body ul {
+        margin-left: 5px;
+        padding-left: 1em;
+        margin-bottom: 5px;
+    }
+
+    div.skill {
+        break-inside: avoid;
+    }
+
+    div.skill p {
+        margin-left: 5px;
+    }
+
+    div.skill ul {
+        margin-left: 8px;
+    }
+}
+
