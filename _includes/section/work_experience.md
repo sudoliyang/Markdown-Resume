@@ -3,17 +3,16 @@
 ### **圓周律資訊**
 > **Software Engineer** *2017 Nov ~ Present*
 
-> 
-> - 專案協作
->   - 與 PM 協作釐清需求並提出相應的解決方案
->   - 與 PM、設計師協作改善 UI/UX
->   - 導入 GitHub Flow 與 Code Review 流程
 > - 維護開發
 >   - 重構網站後端，改善頁面載入速度，減少 16% 載入時間
 >   - 開發訂閱方案包括金流、會員功能、點數改版，帶來穩定收入
 >   - 優化並調整 SEO，提升頁面排名
+> - 專案協作
+>   - 與 PM 協作釐清需求，提出合適的解決方法，小規模迭代上線
+>   - 與 PM、設計師協作改善 UI/UX，提供使用者需要的 UI 與使用流程
+>   - 導入 GitHub Flow 與 Code Review 流程，實際改善開發流程與確保代碼品質
 > - 運帷部署
->   - 部署在 GCP，通過 Pagespeed 提升頁面載入效率
+>   - 部署在 GCP，通過 Pagespeed 優化頁面，減少 50% 頁面首次繪製時間
 
 ### **百星電子**
 > **Research and Development Engineer** *2016 July ~ 2017 Oct*
@@ -26,7 +25,8 @@
 > - 管理 Infrastructure
 >   - 建置與管理 VMware vSphere 與內部 Linux/Ubuntu 用戶、檔案權限、網路配置
 > - 開發內部系統
->   - 基於 MySQL, Nginx, Liferay, Bonita BPM, Hibernate, Primeface 開發相關應用
+>   - 基於 Open Source CMS/BPM 系統 Liferay, Bonita BPM  開發與客製化相關應用
+>   - 使用相關技術 Java, MySQL, Nginx, Hibernate, Primeface
 
 ### **落失方得**
 > **Sofware & Hardware Developer** *2014 Dec ~ 2015 July*
@@ -35,4 +35,4 @@
 > 進駐 AppWorks Accelerator Class #10，在 AppWorks 時期學習整個 Internet Startup 的生態。
 > - 尋找商業模式與嘗試各種機會
 > - 透過 Arduino 與周邊電路設計與實作硬體 prototype 
-> - 透過 Swift 為圍棋人客製化開發計時器 iOS App
+> - 透過 Swift 為圍棋人客製化開發計時器 iOS App，App Store 獲得 5 顆星評價
