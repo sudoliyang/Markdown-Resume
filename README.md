@@ -49,7 +49,7 @@ Configuration file: /Users/liyang/Markdown-Resume/_config.yml
 
 設定 google analytics track id, 編輯 `_config.yml`
 ```
-google_analytics: <your_google_analytics_tracking_code>
+gtag_id: <gtag_id>
 ```
 
 用下列指令將靜態的檔案 build 到 `_site`
