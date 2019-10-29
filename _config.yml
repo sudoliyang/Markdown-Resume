@@ -1,2 +1,2 @@
 exclude: ["bin", "README.md"]
-google_analytics:
+gtag_id: 
