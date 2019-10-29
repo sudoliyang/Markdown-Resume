@@ -22,10 +22,6 @@
             }
         }
 
-        section {
-            break-inside: avoid;
-        }
-
         @media only screen and (min-width: 1024px) {
             .markdown-body {
                 box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
@@ -76,6 +72,14 @@
         <section class="summery">
             {{ content }}
         </section>
+        <section class="work_experience">
+            {% capture my_include %}{% include section/work_experience.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </section>
+        <section class="project">
+            {% capture my_include %}{% include section/project.md %}{% endcapture %}
+            {{ my_include | markdownify }}
+        </section>
         <section class="skill">
             <h1> Skill </h1>
             <div>
@@ -85,14 +89,6 @@
         </section>
         <section class="education">
             {% capture my_include %}{% include section/education.md %}{% endcapture %}
-            {{ my_include | markdownify }}
-        </section>
-        <section class="work_experience">
-            {% capture my_include %}{% include section/work_experience.md %}{% endcapture %}
-            {{ my_include | markdownify }}
-        </section>
-        <section class="project">
-            {% capture my_include %}{% include section/project.md %}{% endcapture %}
             {{ my_include | markdownify }}
         </section>
         <div class="footer">
